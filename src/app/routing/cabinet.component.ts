@@ -90,6 +90,8 @@ export class AppCabinetComponent implements OnInit{
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
+    // TODO: check auth
+    // TODO: load data
     this.dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
